@@ -49,9 +49,13 @@
 # General
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-family: var(--default-font);
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+    background-image: url('Image/CareUnitSign.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a {
