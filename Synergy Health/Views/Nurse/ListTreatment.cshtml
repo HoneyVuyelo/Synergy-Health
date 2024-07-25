@@ -1,0 +1,38 @@
+﻿@model Synergy_Health.Models.Treatment
+
+@{
+    ViewBag.Title = "ListTreatment";
+    //Layout = "~/Areas/Walk-in Patient/Views/_AdminDashboard.cshtml";
+}
+
+<div class="row">
+    <ol class="breadcrumb">
+        <li>
+            <a href="#">
+                <em class="fa fa-home"></em>
+            </a>
+        </li>
+        <li class="active">Treatment>
+        <li class="active">List Of Treatment</li>
+    </ol>
+</div>
+
+<h2>List Of Treatment</h2>
+
+<table id="table_id" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Consummables)
+            </th>
+         
+            <th>Action</th>
+        </tr>
+    </thead>
+</table>

@@ -14,7 +14,7 @@ namespace Synergy_Health.Models
         [Required]
         public string? Description { get; set; }
         [Required]
-        public string? Adress { get; set; }
+        public string? Address { get; set; }
         [Phone]
    
         public int Telephone { get; set; }
