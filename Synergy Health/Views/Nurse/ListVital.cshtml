@@ -1,5 +1,78 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Synergy_Health.Models.Vital
+
 @{
+    ViewBag.Title = "ListVital";
+    //Layout = "~/Areas/Walk-in Patient/Views/_AdminDashboard.cshtml";
 }
+
+<div class="row">
+    <ol class="breadcrumb">
+        <li>
+            <a href="#">
+                <em class="fa fa-home"></em>
+            </a>
+        </li>
+        <li class="active">Vital</li>
+        <li class="active">List Of Vital</li>
+    </ol>
+</div>
+
+<h2>List Of Vital</h2>
+
+<table id="table_id" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Temperature)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodPressure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeartRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notes)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    @* <tbody>
+    @foreach (var item in Model)
+    {
+    <tr>
+    <td>
+    @Html.DisplayFor(modelItem => item.Weight)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Temperature)
+
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.BloodPressure)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.HeartRate)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Date)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Notes)
+    </td>
+
+    <td>
+    <a href="@Url.Action("EditVital", new {id = item.VitalId})" class="fa fa-pencil-square-o" style="font-size: 19px"></a> |
+    <a href="@Url.Action("DeleteVital", new {id = item.VitalId})" class="fa fa-trash" style="font-size: 19px; color: red"></a>
+    </td>
+    </tr>
+    }
+    </tbody> *@
+
+</table>

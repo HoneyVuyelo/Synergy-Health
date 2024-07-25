@@ -12,5 +12,7 @@ namespace Synergy_Health.Data
         }
         public DbSet<HospitalInfo> businessInfos { get; set; }
         public DbSet<Vital> vitals { get; set; }
+
+        public DbSet<Treatment> treatments { get; set; }
     }
 }
